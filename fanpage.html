@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HENRY TN - Connect</title>
+    <link rel="stylesheet" href="lobby.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="pro-header-section">
+    <div class="pro-navbar-container">
+        <a href="#" class="pro-brand-name">HENRY TN</a> 
+        
+        <nav class="pro-nav-links">
+            <a href="lobby.html" class="pro-nav-item">HOME</a>
+            <a href="fanpage.html" class="pro-nav-item current">FANPAGE</a>
+            <a href="music.html" class="pro-nav-item">MUSIC</a>
+            <a href="about.html" class="pro-nav-item">ABOUT</a>
+            <a href="https://elasticstage.com/henrytnshop/releases/oshut-and-lisa-singleep" class="pro-nav-item">CD/VINYL</a>
+        </nav>
+        
+        <div class="pro-new-release-cta">
+            <span class="pro-cta-label">Update:</span>
+            <a href="#" class="pro-cta-title">0.01</a> 
+        </div>
+    </div>
+    <link rel="stylesheet" href="head.css">
+
+</header>
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry TN Social Media Hub</title>
+    <!-- Include Font Awesome for professional social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Use Inter font for a clean, professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* --- Social Hub Container (Medium Size, Centered Card) --- */
+        .social-hub-container {
+            max-width: 800px; /* Increased max-width to accommodate more links */
+            width: 100%;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            /* Professional elevation shadow */
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); 
+            text-align: center;
+        }
+
+        .hub-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .hub-subtitle {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        /* --- Social Links Grid --- */
+        .social-links-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px 15px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 15px;
+            border-radius: 12px;
+            
+            /* Professional hover effects with a 'springy' feel */
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color: transparent;
+            width: 100px; /* Uniform width for clean layout */
+        }
+
+        .social-link:hover {
+            background-color: #ecf0f1;
+            transform: translateY(-5px); /* Lift effect */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* --- Icon Styling --- */
+        .social-icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+            color: #95a5a6; /* Neutral default icon color */
+            transition: color 0.3s ease;
+        }
+        
+        /* Icon Color Overrides on Hover (Branded Colors) */
+        .social-link:hover .social-icon.spotify-icon { color: #1DB954; }
+        .social-link:hover .social-icon.apple-icon { color: #555555; }
+        .social-link:hover .social-icon.tidal-icon { color: #00A6DA; }
+        .social-link:hover .social-icon.tiktok-icon { color: #FE2C55; }
+        .social-link:hover .social-icon.facebook-icon { color: #1877F2; }
+        .social-link:hover .social-icon.youtube-icon { color: #FF0000; }
+        .social-link:hover .social-icon.youtube-music-icon { color: #FF0000; } /* YouTube Music Red */
+        .social-link:hover .social-icon.instagram-icon { color: #C13584; }
+        .social-link:hover .social-icon.twitter-icon { color: #000000; } /* Black for X */
+        .social-link:hover .social-icon.amazon-music-icon { color: #FF9900; }
+        .social-link:hover .social-icon.snapchat-icon { color: #FFFC00; }
+        .social-link:hover .social-icon.genius-icon { color: #FFD100; }
+        .social-link:hover .social-icon.lyricfind-icon { color: #6C7A89; }
+        .social-link:hover .social-icon.qobuz-icon { color: #812036; }
+        .social-link:hover .social-icon.boomplay-icon { color: #000000; }
+        .social-link:hover .social-icon.iheartmusic-icon { color: #C60023; }
+        .social-link:hover .social-icon.roblox-icon { color: #000000; }
+        .social-link:hover .social-icon.bandsintown-icon { color: #00bcd4; } /* Bandsintown vibrant blue */
+
+
+        /* --- Text Label Styling --- */
+        .social-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #34495e;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .social-hub-container {
+                padding: 30px 20px;
+            }
+            .social-links-grid {
+                gap: 15px 10px;
+            }
+            .social-link {
+                width: 70px; 
+                padding: 10px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="social-hub-container">
+        <h2 class="hub-title">Connect with Henry TN</h2>
+        <p class="hub-subtitle">Follow my journey and listen to my music across all major platforms.</p>
+
+        <div class="social-links-grid">
+            
+            <!-- FACEBOOK -->
+            <a href="https://facebook.com/henryxtran2010" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook-f social-icon facebook-icon"></i>
+                <span class="social-label">Facebook</span>
+            </a>
+            
+            <!-- SPOTIFY -->
+            <a href="https://open.spotify.com/artist/7JzSWiJwoTZGChbR9wOoQv?si=0TB3ox2rSpONIlrYZwBaCg" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                <i class="fab fa-spotify social-icon spotify-icon"></i>
+                <span class="social-label">Spotify</span>
+            </a>
+
+            <!-- APPLE MUSIC -->
+            <a href="https://music.apple.com/us/artist/henry-tn/1835423265" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                <i class="fab fa-apple social-icon apple-icon"></i>
+                <span class="social-label">Apple Music</span>
+            </a>
+
+            <!-- TIDAL -->
+            <a href="https://tidal.com/artist/65950496" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Tidal">
+                <i class="fas fa-volume-up social-icon tidal-icon"></i>
+                <span class="social-label">Tidal</span>
+            </a>
+            
+            <!-- TIKTOK -->
+            <a href="https://www.tiktok.com/@hvmd_official" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Tiktok">
+                <i class="fab fa-tiktok social-icon tiktok-icon"></i>
+                <span class="social-label">Tiktok</span>
+            </a>
+            
+            <!-- YOUTUBE -->
+            <a href="https://youtube.com/@hvmdofficial?si=PC3JM4vZrH-kqknV" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <i class="fab fa-youtube social-icon youtube-icon"></i>
+                <span class="social-label">YouTube</span>
+            </a>
+
+            <!-- YOUTUBE MUSIC (New Addition) -->
+            <a href="https://music.youtube.com/channel/UC8XOFbpdYY1tM161zjVZhtg" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube Music">
+                <i class="fab fa-youtube social-icon youtube-music-icon"></i>
+                <span class="social-label">YouTube Music</span>
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="https://www.instagram.com/henrytran2010/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram social-icon instagram-icon"></i>
+                <span class="social-label">Instagram</span>
+            </a>
+            
+            <!-- TWITTER/X -->
+            <a href="https://x.com/henrytnofficial" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fab fa-x-twitter social-icon twitter-icon"></i>
+                <span class="social-label">Twitter/X</span>
+            </a>
+            
+            <!-- AMAZON MUSIC -->
+            <a href="https://music.amazon.com/artists/B0FNP8C59J/henry-tn" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Amazon Music">
+                <i class="fab fa-amazon social-icon amazon-music-icon"></i>
+                <span class="social-label">Amazon Music</span>
+            </a>
+            
+            <!-- SNAPCHAT -->
+            <a href="https://snapchat.com/t/9GYFGNfM" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
+                <i class="fab fa-snapchat-ghost social-icon snapchat-icon"></i>
+                <span class="social-label">Snapchat</span>
+            </a>
+            
+            <!-- GENIUS -->
+            <a href="https://genius.com/artists/Henry-tn" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Genius">
+                <i class="fas fa-lightbulb social-icon genius-icon"></i>
+                <span class="social-label">Genius</span>
+            </a>
+
+            <!-- LYRICFIND -->
+            <a href="https://lyrics.lyricfind.com/artists/henry-tn" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LyricFind">
+                <i class="fas fa-file-alt social-icon lyricfind-icon"></i>
+                <span class="social-label">LyricFind</span>
+            </a>
+
+            <!-- QOBUZ -->
+            <a href="https://www.qobuz.com/nz-en/interpreter/henry-tn/28295635" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Qobuz">
+                <i class="fas fa-headphones-alt social-icon qobuz-icon"></i>
+                <span class="social-label">Qobuz</span>
+            </a>
+            
+            <!-- BOOMPLAY -->
+            <a href="https://www.boomplay.com/share/artist/115326035?srModel=COPYLINK&srList=IOS" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Boomplay">
+                <i class="fas fa-music social-icon boomplay-icon"></i>
+                <span class="social-label">Boomplay</span>
+            </a>
+
+            <!-- IHEARTMUSIC -->
+            <a href="https://www.iheart.com/artist/henry-tn-47848638/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="iHeartMusic">
+                <i class="fas fa-heart social-icon iheartmusic-icon"></i>
+                <span class="social-label">iHeartMusic</span>
+            </a>
+
+            <!-- ROBLOX -->
+            <a href="https://www.roblox.com/users/4548262909/profile" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Roblox">
+                <i class="fas fa-gamepad social-icon roblox-icon"></i>
+                <span class="social-label">Roblox</span>
+            </a>
+
+            <!-- BANDSINTOWN -->
+            <a href="https://www.bandsintown.com/a/15615883-henry-tn?came_from=257&utm_medium=web&utm_source=home&utm_campaign=search_bar" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Bandsintown">
+                <i class="fas fa-calendar-alt social-icon bandsintown-icon"></i>
+                <span class="social-label">Bandsintown</span>
+            </a>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<footer class="pro-footer-bar">
+    <div class="pro-footer-container">
+
+        <div class="pro-company-info">
+            <a href="hvmd.html" class="pro-logo">
+                <span class="pro-logo-text">HVMD</span>
+                <span class="pro-logo-subtitle">COMPANY</span>
+            </a>
+            <p class="pro-copyright">
+                © 2025 HVMD. All Rights Reserved.
+            </p>
+        </div>
+
+        <div class="pro-social-links-group">
+            <h4 class="pro-social-heading">Connect</h4>
+            <div class="pro-social-links text-links">
+                <a href="https://open.spotify.com/artist/7JzSWiJwoTZGChbR9wOoQv?si=0TB3ox2rSpONIlrYZwBaCg" class="pro-social-link">Spotify</a>
+                <a href="https://music.apple.com/us/artist/henry-tn/1835423265" class="pro-social-link">Apple Music</a>
+                <a href="https://tidal.com/artist/65950496" class="pro-social-link">Tidal</a>
+                <a href="https://www.tiktok.com/@hvmd_official" class="pro-social-link">Tiktok</a>
+                <a href="https://www.facebook.com/henryxtran2010" class="pro-social-link">Facebook</a>
+            </div>
+        </div>
+
+    </div>
+    <link rel="stylesheet" href="socialmedia.css"> 
+</footer>
+</body>
+</html>

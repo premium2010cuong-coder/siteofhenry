@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry TN - About</title>
+    <!-- Include Font Awesome for professional social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Use Inter font for a clean, professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HENRY TN - The Artist</title>
+    <link rel="stylesheet" href="lobby.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="pro-header-section">
+    <div class="pro-navbar-container">
+        <a href="#" class="pro-brand-name">HENRY TN</a> 
+        
+        <nav class="pro-nav-links">
+            <a href="lobby.html" class="pro-nav-item">HOME</a>
+            <a href="fanpage.html" class="pro-nav-item">FANPAGE</a>
+            <a href="music.html" class="pro-nav-item">MUSIC</a>
+            <a href="about.html" class="pro-nav-item current">ABOUT</a>
+            <a href="https://elasticstage.com/henrytnshop/releases/oshut-and-lisa-singleep" class="pro-nav-item">CD/VINYL</a>
+        </nav>
+        
+        <div class="pro-new-release-cta">
+            <span class="pro-cta-label">Update:</span>
+            <a href="#" class="pro-cta-title">0.01</a> 
+        </div>
+    </div>
+    <link rel="stylesheet" href="head.css">
+
+</header>
+
+<footer class="pro-footer-bar">
+    <div class="pro-footer-container">
+
+        <div class="pro-company-info">
+            <a href="hvmd.html" class="pro-logo">
+                <span class="pro-logo-text">HVMD</span>
+                <span class="pro-logo-subtitle">COMPANY</span>
+            </a>
+            <p class="pro-copyright">
+                © 2025 HVMD. All Rights Reserved.
+            </p>
+        </div>
+
+        <div class="pro-social-links-group">
+            <h4 class="pro-social-heading">Connect</h4>
+            <div class="pro-social-links text-links">
+                <a href="https://open.spotify.com/artist/7JzSWiJwoTZGChbR9wOoQv?si=0TB3ox2rSpONIlrYZwBaCg" class="pro-social-link">Spotify</a>
+                <a href="https://music.apple.com/us/artist/henry-tn/1835423265" class="pro-social-link">Apple Music</a>
+                <a href="https://tidal.com/artist/65950496" class="pro-social-link">Tidal</a>
+                <a href="https://www.tiktok.com/@hvmd_official" class="pro-social-link">Tiktok</a>
+                <a href="https://www.facebook.com/henryxtran2010" class="pro-social-link">Facebook</a>
+            </div>
+        </div>
+
+    </div>
+    <link rel="stylesheet" href="socialmedia.css"> 
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+            /* Add smooth transition for theme change (body background/color) */
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* --- THEME DEFINITIONS --- */
+
+        /* Light Theme (For Henry TN - Index 0) */
+        .theme-light { 
+            background-color: #ffffff; /* White body */
+            color: #1a1a1a; /* Dark text */
+        }
+        /* Dark Theme (For Yuna Tran - Index 1) */
+        .theme-dark {
+            background-color: #1a1a1a; /* Black body */
+            color: #f0f0f0; /* Light text */
+        }
+
+        /* Card Style: Dark Card on Light Background (Henry TN) */
+        .profile-card.theme-dark-card {
+            background-color: #1a1a1a; /* Black card */
+            color: #f7f7f7; /* Light text */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+        }
+        /* Active glow for dark card */
+        .profile-card.theme-dark-card.is-visible {
+            border: 2px solid #00bcd4; /* Cyan accent border */
+            box-shadow: 0 10px 40px rgba(0, 188, 212, 0.4); 
+        }
+
+        .profile-card.theme-dark-card .profile-title { color: #00bcd4; /* Cyan accent */ }
+        .profile-card.theme-dark-card .profile-description { color: #b0b0b0; }
+        .profile-card.theme-dark-card .social-icon-link { color: #b0b0b0; }
+        .profile-card.theme-dark-card .profile-image-section { border-color: #00bcd4; }
+
+        /* Card Style: Light Card on Dark Background (Yuna Tran) */
+        .profile-card.theme-light-card {
+            background-color: #f7f7f7; /* White card */
+            color: #1a1a1a; /* Dark text */
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+            transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+        }
+        /* Active glow for light card */
+        .profile-card.theme-light-card.is-visible {
+            border: 2px solid #BB86FC; /* Purple accent border */
+            box-shadow: 0 10px 40px rgba(187, 134, 252, 0.3);
+        }
+        
+        .profile-card.theme-light-card .profile-title { color: #BB86FC; }
+        .profile-card.theme-light-card .profile-description { color: #555555; }
+        .profile-card.theme-light-card .social-icon-link { color: #555555; }
+        .profile-card.theme-light-card .profile-image-section { border-color: #BB86FC; }
+
+        /* --- Main Content Layout (Centering) --- */
+        .main-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            padding: 20px; 
+        }
+        
+        .content-wrapper {
+            display: flex;
+            max-width: 1400px; 
+            width: 100%;
+            margin: 0 auto;
+            align-items: flex-start; 
+        }
+
+        /* --- Fixed Choice Menu (Left Side) --- */
+        .choice-menu-container {
+            flex-shrink: 0;
+            width: 250px;
+            padding: 20px 0;
+            position: sticky; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            align-self: flex-start;
+        }
+
+        .choice-box {
+            background: transparent;
+            padding: 10px 0; 
+            cursor: pointer;
+            text-align: left; 
+            transition: all 0.2s ease-in-out;
+            margin: 10px 0;
+        }
+
+        .choice-box-title {
+            font-size: 18px; 
+            font-weight: 400; 
+            color: inherit; 
+            margin: 0; 
+            line-height: 1.2;
+            transition: all 0.3s ease;
+        }
+        
+        /* Highlight Style for the currently selected choice */
+        .choice-box.selected-choice .choice-box-title {
+            font-weight: 700; 
+            color: #ffffff; 
+            background-color: #1a1a1a; 
+            border: 2px solid #1a1a1a;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block; 
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Dark Theme Menu Highlight OVERRIDE */
+        .theme-dark .choice-box-title {
+            color: #b0b0b0; 
+        }
+        .theme-dark .choice-box.selected-choice .choice-box-title {
+            color: #1a1a1a; 
+            background-color: #f0f0f0; 
+            border-color: #f0f0f0;
+            box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+        }
+
+        /* --- Carousel Section --- */
+        .carousel-section {
+            flex-grow: 1;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory; 
+            display: flex;
+            gap: 100px; 
+            padding: 20px 50px; 
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .carousel-section::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* --- Individual Profile Card Styling --- */
+        .profile-card {
+            flex-shrink: 0;
+            width: 700px; 
+            height: 600px; 
+            scroll-snap-align: center;
+            border-radius: 16px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            
+            /* Animation initial state */
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out, box-shadow 0.5s ease, border 0.5s ease;
+        }
+
+        /* Active profile card (visible in viewport) */
+        .profile-card.is-visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .profile-image-section {
+            flex-shrink: 0; 
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; 
+            overflow: hidden;
+            border: 3px solid; 
+            
+            /* Slash Animation: Start off to the left */
+            transform: translateX(-50px);
+            opacity: 0;
+            transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.6s ease-out, border-color 0.5s ease;
+        }
+
+        .profile-card.is-visible .profile-image-section {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .profile-text-header {
+            text-align: left;
+            /* Slash Animation: Start lower */
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, opacity 0.6s ease-out 0.1s;
+        }
+        
+        .profile-card.is-visible .profile-text-header {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .profile-description {
+            font-size: 18px; 
+            margin: 30px 0 0 0;
+            line-height: 1.6;
+            max-width: 90%;
+            /* Slash Animation: Start lower (delayed) */
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.2s, opacity 0.6s ease-out 0.2s;
+        }
+
+        .profile-card.is-visible .profile-description {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-name {
+            font-size: 36px;
+            font-weight: 900;
+            color: inherit;
+            margin: 0;
+            line-height: 1.1;
+        }
+        
+        .social-links-footer {
+            display: flex;
+            gap: 20px;
+            align-self: flex-end;
+            margin-top: auto; 
+        }
+
+        .social-icon-link {
+            font-size: 24px;
+            color: inherit; 
+            transition: color 0.3s ease;
+        }
+        /* Specific hover colors for social media icons */
+        .social-icon-link:hover .fa-instagram { color: #C13584; }
+        .social-icon-link:hover .fa-tiktok { color: #FE2C55; }
+        
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 1100px) {
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            .choice-menu-container {
+                position: static;
+                transform: translateY(0);
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+                top: auto;
+            }
+            .choice-box {
+                display: inline-block;
+                margin: 0 10px;
+            }
+            .carousel-section {
+                padding: 0;
+            }
+            .profile-card {
+                width: 90vw; 
+                height: auto;
+                padding: 20px;
+                scroll-snap-align: start; 
+            }
+            .profile-header-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-image-section {
+                margin-bottom: 15px;
+            }
+            .profile-description {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="theme-light"> 
+
+    <div class="main-container">
+        <div class="content-wrapper">
+            
+            <!-- 1. FIXED CHOICE MENU (2 items) -->
+            <div class="choice-menu-container">
+                <div class="choice-box selected-choice" data-target-index="0" id="choice0">
+                    <h4 class="choice-box-title">Henry TN</h4>
+                </div>
+                <div class="choice-box" data-target-index="1" id="choice1">
+                    <h4 class="choice-box-title">Yuna Tran</h4>
+                </div>
+            </div>
+
+            <!-- 2. SCROLLABLE CAROUSEL SECTION (2 items) -->
+            <div class="carousel-section" id="carousel">
+                
+                <!-- Profile 0 (Henry TN) -> Theme: Light Body, Dark Card -->
+                <div class="profile-card theme-dark-card" data-profile-index="0">
+                    <div class="profile-header-info">
+                        <div class="profile-image-section">
+                            <img src="henrytn.png" alt="Henry TN Profile Picture" class="profile-image" onerror="this.onerror=null; this.src='https://placehold.co/150x150/9C27B0/ffffff?text=H+T+N';">
+                        </div>
+                        <div class="profile-text-header">
+                            <p class="profile-title">Artist, Musician</p>
+                            <h3 class="profile-name">Henry TN</h3>
+                        </div>
+                    </div>
+                    <p class="profile-description">
+                        Henry TN, whose real name is **Henry Tran** (Vietnamese: Trần Quốc Cường), is a Vietnamese-born artist now living in Auckland, New Zealand. He was born on **20 May 2010** in Đồng Hới city, Vietnam, and after spending about twelve years in Vietnam he moved with his family to New Zealand, where he attended Northcote College. Under the stage name Henry TN, he released his first EP *TN love Instrumental 1* and later projects such as *Fellahshy*. In much of his music, he takes roles as musician.
+                    </p>
+                    <div class="social-links-footer">
+                        <a href="https://www.instagram.com/henrytran2010/" target="_blank" class="social-icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@hvmd_official" target="_blank" class="social-icon-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Profile 1 (Yuna Tran) -> Theme: Dark Body, Light Card -->
+                <div class="profile-card theme-light-card" data-profile-index="1">
+                    <div class="profile-header-info">
+                        <div class="profile-image-section">
+                            <img src="yuna.png" alt="Yuna Tran Profile Picture" class="profile-image" onerror="this.onerror=null; this.src='https://placehold.co/150x150/28a745/ffffff?text=Y+T';">
+                        </div>
+                        <div class="profile-text-header">
+                            <p class="profile-title">Actor, Creative</p>
+                            <h3 class="profile-name">Yuna Tran</h3>
+                        </div>
+                    </div>
+                    <p class="profile-description">
+                        **Yuna Tran** (Trần Ngọc Bảo Châu) is a Vietnamese-born actor now living in Auckland, New Zealand. She was born on **18 July 2012** in Đồng Hới city, Vietnam. After spending 10 years in Vietnam, she moved with her family to New Zealand. Yuna Tran is **Henry TN's sister**. In all Music Video projects, she always takes a role as the main actor in the music video, lending her creative presence to the visual side of the music.
+                    </p>
+                    <div class="social-links-footer">
+                        <a href="https://www.instagram.com/yuna_dumpqw/" target="_blank" class="social-icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@itz.wynn13?_r=1&_t=ZS-91WR6PzKIFR" target="_blank" class="social-icon-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const choiceBoxes = document.querySelectorAll('.choice-box');
+        const profileCards = document.querySelectorAll('.profile-card');
+
+        let isInternalScroll = false; 
+        let activeIndex = 0; 
+
+        // --- 1. HANDLE CLICK/SCROLL TO SECTION ---
+        choiceBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const targetIndex = parseInt(box.dataset.targetIndex);
+                
+                applyTheme(targetIndex);
+                updateChoiceHighlight(targetIndex); 
+                updateCardAnimation(targetIndex);
+                
+                scrollToProfile(targetIndex);
+            });
+        });
+
+        function scrollToProfile(index) {
+            isInternalScroll = true; 
+            const targetCard = profileCards[index];
+            
+            if (targetCard) {
+                targetCard.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    inline: 'center' 
+                });
+
+                // Increased timeout to ensure scroll completes before observer reactivates
+                setTimeout(() => {
+                    isInternalScroll = false;
+                }, 1000); 
+            }
+        }
+
+        // --- 2. HANDLE SCROLL SYNCHRONIZATION (Intersection Observer) ---
+        const observerOptions = {
+            root: carousel,
+            rootMargin: '0px', 
+            // Simple thresholds for stable detection
+            threshold: [0, 0.25, 0.5, 0.75, 1.0] 
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            if (isInternalScroll) return; 
+
+            let maxRatio = -1;
+            let currentActiveIndex = -1;
+
+            entries.forEach(entry => {
+                const index = parseInt(entry.target.dataset.profileIndex);
+                
+                // Find the card that is most visible (largest intersection ratio)
+                if (entry.isIntersecting && entry.intersectionRatio > 0.25 && entry.intersectionRatio > maxRatio) {
+                    maxRatio = entry.intersectionRatio;
+                    currentActiveIndex = index;
+                }
+            });
+            
+            if (currentActiveIndex !== -1 && currentActiveIndex !== activeIndex) {
+                activeIndex = currentActiveIndex; 
+                
+                // Apply theme, highlight, and animation when user scrolls manually
+                applyTheme(activeIndex);
+                updateChoiceHighlight(activeIndex);
+                updateCardAnimation(activeIndex);
+            }
+        }, observerOptions);
+
+        // Attach observer to each profile card
+        profileCards.forEach(card => {
+            observer.observe(card);
+        });
+
+        // --- 3. DYNAMIC THEME APPLICATION ---
+        function applyTheme(index) {
+            // Index 0 (Henry TN) -> Light Body 
+            // Index 1 (Yuna Tran) -> Dark Body
+            const bodyClass = index === 1 ? 'theme-dark' : 'theme-light';
+            
+            document.body.classList.remove('theme-light', 'theme-dark');
+            document.body.classList.add(bodyClass);
+        }
+
+        // --- 4. UPDATE HIGHLIGHT STYLES ---
+        function updateChoiceHighlight(index) {
+            choiceBoxes.forEach(box => box.classList.remove('selected-choice'));
+            const activeChoice = document.getElementById(`choice${index}`);
+            
+            if (activeChoice) {
+                activeChoice.classList.add('selected-choice');
+                activeChoice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+        
+        // --- 5. HANDLE ANIMATION CLASS (Slash/Glow) ---
+        function updateCardAnimation(currentActiveIndex) {
+            profileCards.forEach((card, index) => {
+                // Toggle the 'is-visible' class based on the active index
+                if (index === currentActiveIndex) {
+                    card.classList.add('is-visible');
+                } else {
+                    card.classList.remove('is-visible');
+                }
+            });
+        }
+
+
+        // Initialize the first profile as active on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Wait slightly for layout to settle before observing
+            setTimeout(() => {
+                applyTheme(0); 
+                updateChoiceHighlight(0);
+                updateCardAnimation(0); 
+            }, 100);
+        });
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+/* --- Global Base Styles (Using a modern font) --- */
+/* Add this link to your HTML <head> for the font: 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7; /* Increased line-height for better readability */
+    color: #495057; /* Soft dark gray */
+}
+
+.container {
+    max-width: 1100px; /* Slightly tighter max-width for focus */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* --- Company Feature Section Styling (Extreme Good) --- */
+.company-feature-section.extreme-good-style {
+    min-height: 80vh; 
+    padding: 100px 0;
+    background-color: #e9ecef; /* Cool, very light grey background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-content-block.centered-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    /* Elevated, layered shadow for depth */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05); 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.company-content-block.centered-content:hover {
+    /* Subtle hover to indicate interactivity/focus */
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15), 0 10px 20px rgba(0, 0, 0, 0.08); 
+}
+
+/* Image Wrapper and Styling */
+.company-image-wrapper.centered-image-wrapper {
+    /* Image is now circular and sits above the text block */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Perfect circle */
+    margin: -100px auto 30px auto; /* Pull it slightly above the block */
+    overflow: hidden;
+    border: 5px solid #ffffff; /* White border to lift it visually */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.company-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the circle without distortion */
+    display: block;
+}
+
+/* Text Content Styling */
+.company-text-wrapper.centered-text-wrapper {
+    /* Clean up top margin since image is positioned absolutely */
+    margin-top: -30px; 
+}
+
+.company-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #343a40; /* Very dark text for high contrast */
+    margin-bottom: 25px;
+    
+    /* Elegant underline effect */
+    border-bottom: none;
+    background-image: linear-gradient(to right, #ffffff3a, #ffffff62);
+    background-size: 60px 3px; /* Width and height of the underline */

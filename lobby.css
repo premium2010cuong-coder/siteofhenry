@@ -1,0 +1,123 @@
+/* Basic Reset and Fonts */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff00; /* White background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 40px;
+    gap: 10px 30px;
+    flex-grow: 1;
+    align-content: center; /* Center vertically within its space */
+    position: relative; /* Context for children */
+}
+
+.nav-item {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    /* Use padding/margin to control alignment based on the template */
+    padding: 5px 0; 
+}
+
+/* Alignment for the two rows shown in the template */
+.nav-item:nth-child(1), .nav-item:nth-child(2), .nav-item:nth-child(3) {
+    /* Top Row */
+    margin-right: 30px; 
+}
+
+.nav-item:nth-child(4), .nav-item:nth-child(5), .nav-item:nth-child(6) {
+    /* Bottom Row - Use positioning or flex basis for a clear two-column layout */
+    flex-basis: 30%; /* Approximate column width */
+}
+
+.home-icon {
+    font-weight: bold;
+}
+.music-icon {
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* --- Main Content Area --- */
+.content-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 50px;
+}
+
+.artist-name {
+    /* Apply the blocky, tech-like font */
+    font-family: 'Chakra Petch', sans-serif; 
+    font-size: 80px;
+    font-weight: 700; /* Bold */
+    margin: 0;
+    letter-spacing: 15px; /* Wide letter spacing */
+    /* Text stroke/shadow effect */
+    color: transparent; 
+    -webkit-text-stroke: 1px black; 
+    text-stroke: 1px black;
+}
+
+.artist-subtitle {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+/* --- Footer --- */
+.footer-bar {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%; 
+    border-top: 1px solid #e99f9f00; /* Very light separation line */
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+.company-logo {
+    display: flex;
+    align-items: baseline;
+    font-weight: 900;
+    color: #00008b; 
+    text-transform: uppercase;
+}
+
+.logo-text {
+    font-size: 20px;
+    margin-right: 2px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.logo-subtitle {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,85 @@
+/* --- Professional Footer Styling (Retaining layout) --- */
+
+.pro-footer-bar {
+    width: 100%;
+    background-color: #f7f7f7; /* Light grey background */
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.pro-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* --- Company Info / Logo (Unchanged) --- */
+.pro-logo {
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+    color: #333333;
+}
+
+.pro-logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 2px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.pro-logo-subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.pro-copyright {
+    font-size: 12px;
+    color: #777777;
+    margin: 0;
+}
+
+/* --- Social Links Group (New Text Link Styling) --- */
+.pro-social-links-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pro-social-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555555;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.pro-social-links {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if many links are added */
+    gap: 10px; /* Space between the text links */
+}
+
+.pro-social-link {
+    color: #333333;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px; /* Padding to make them feel like buttons */
+    border: 1px solid #cccccc; /* Subtle border */
+    border-radius: 4px; /* Slight rounding */
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.pro-social-link:hover {
+    background-color: #e0e0e0; /* Hover background */
+    color: #000000;
+    border-color: #a0a0a0; /* Darker border on hover */
+}
